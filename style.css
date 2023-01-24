@@ -5,17 +5,27 @@
 }
 
 body {
+  margin-top: 10px;
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-
   min-width: 100vh;
 }
 
-#grid {
+.grid {
+  margin-top: 20px;
   width: 200px;
   height: 400px;
-  background-color: aquamarine;
+  background-color: blanchedalmond;
+}
+
+.grid div {
+  width: 20px;
+  height: 20px;
+}
+
+.shape {
+  background-color: blue;
 }
