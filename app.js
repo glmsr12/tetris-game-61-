@@ -28,7 +28,7 @@ const shapeT = [
 ];
 
 const shapeZ = [
-  [1, width + 1, width * 2 + 1, 2],
+  [0, width, width + 1, width * 2 + 1],
   [width + 1, width + 2, width * 2, width * 2 + 1],
   [0, width, width + 1, width * 2 + 1],
   [width + 1, width + 2, width * 2, width * 2 + 1],
@@ -62,6 +62,17 @@ function draw() {
 
 function undraw() {
   current.forEach((index) => {
-    square[currentPosition + index].classList.remove('shape');
+    squares[currentPosition + index].classList.remove('shape');
   });
+}
+
+// make shapes move down every second
+timerId = setInterval(moveDown, 1000);
+
+//move down function
+
+function moveDown() {
+  undraw();
+  currentPosition += width;
+  draw();
 }
