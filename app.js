@@ -3,6 +3,7 @@ let squares = Array.from(document.querySelectorAll('.grid div'));
 const ScoreDisplay = document.querySelector('#score');
 const StartButton = document.querySelector('#start-button');
 const width = 10;
+let timerId;
 
 //Shapes = tetrominos
 
@@ -46,9 +47,11 @@ const shapes = [shapeZ, shapeT, shapeCube, shapeI, shapeL];
 let currentPosition = 4;
 let currentRotation = 0;
 
+console.log(shapes[0][0]);
+
 //randomly select a shape and its first rotation
 let random = Math.floor(Math.random() * shapes.length);
-let current = shapes[random][0];
+let current = shapes[random][currentRotation];
 
 // draw the shape
 
