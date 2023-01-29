@@ -2,7 +2,7 @@
 
 ref: https://www.youtube.com/watch?v=rAUn1Lom6dw&t=1813s
 
-This is a fun way to sharpen your problem solving and critical thinking project to learning fundamentals of JavaScript!
+This is a great approach to work on your critical thinking and problem-solving skills while learning the fundamentals of JavaScript!
 
 #projectbaselearning
 
